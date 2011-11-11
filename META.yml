@@ -10,19 +10,20 @@ configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 4.300003, CPAN::Meta::Converter version 2.112621'
-license: unknown
+license: gpl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Win32-Setupsup
 requires:
-  DynaLoader: 0
+  Carp: 0
   Exporter: 0
-  Win32::Registry: 0
+  Win32API::Registry: 0
+  XSLoader: 0
   perl: 5.006
 resources:
   repository: git://github.com/madsen/win32-setupsup.git
-version: 1.02
+version: 1.03
 x_Dist_Zilla:
   plugins:
     -
@@ -94,7 +95,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::GitVersionCheckCJM
       name: CJM/GitVersionCheckCJM
-      version: 4.00
+      version: 4.03
     -
       class: Dist::Zilla::Plugin::TemplateCJM
       name: CJM/TemplateCJM
@@ -139,10 +140,6 @@ x_Dist_Zilla:
       class: Dist::Zilla::Plugin::AutoPrereqs
       name: AutoPrereqs
       version: 4.300003
-    -
-      class: Dist::Zilla::Plugin::Metadata
-      name: Metadata
-      version: 3.03
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':IncModules'

@@ -32,8 +32,6 @@ if ($Config{cc} =~ /gcc/i) {
 
 my %args = (
   NAME           => 'Win32::Setupsup',
-  AUTHOR         => 'Christopher J. Madsen <perl@cjmweb.net>',
-  ABSTRACT       => 'Remote control for Windows applications',
   DEFINE         => '-DPERL_5_6_0',
   OBJECT => 'list.obj misc.obj plmisc.obj setupsup.obj wstring.obj resource.res',
   VERSION_FROM   => 'Setupsup.pm', # finds $VERSION
@@ -45,10 +43,13 @@ my %args = (
     'ExtUtils::MakeMaker' => '6.30'
   },
   'PREREQ_PM' => {
-    'DynaLoader' => '0',
+    'Carp' => '0',
     'Exporter' => '0',
-    'Win32::Registry' => '0'
+    'Win32API::Registry' => '0',
+    'XSLoader' => '0'
   },
+  'ABSTRACT' => 'Remote control for Windows applications',
+  'AUTHOR' => 'Jens Helberg <jens.helberg@de.bosch.com>, Christopher J. Madsen <perl@cjmweb.net>',
   'LICENSE' => 'gpl',
 );
 

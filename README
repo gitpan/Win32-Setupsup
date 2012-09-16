@@ -1,4 +1,4 @@
-Win32::Setupsup version 1.03, released November 11, 2011
+Win32::Setupsup version 1.10, released September 16, 2012
 
 
 This module helps you to control other Windows programs.  It's
@@ -42,18 +42,19 @@ Requires Windows NT 4, Windows 2000, or Windows XP
 
 
 CHANGES
-    Here's what's new in version 1.03 of Win32::Setupsup:
+    Here's what's new in version 1.10 of Win32::Setupsup:
     (See the file "Changes" for the full revision history.)
 
-	- use Win32API::Registry instead of Win32::Registry
-	- use XSLoader instead of DynaLoader
+	- port to Strawberry Perl and gcc
+	- fix old C++ syntax to work with Visual C++ 2010
+	- fix refresh parameter in WaitForWindowClose (was ignored)
 
 
 
 COPYRIGHT AND LICENCE
 
 Copyright 1999 by Jens Helberg
-Copyright 2011 by Christopher J. Madsen
+Copyright 2012 by Christopher J. Madsen
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

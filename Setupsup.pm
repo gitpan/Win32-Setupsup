@@ -39,8 +39,8 @@ use Win32API::Registry qw(RegCloseKey RegCreateKeyEx RegOpenKeyEx
                           :KEY_ :HKEY_ :REG_);
 use XSLoader ();
 
-our $VERSION = '1.03';
-# This file is part of Win32-Setupsup 1.03 (November 11, 2011)
+our $VERSION = '1.10';
+# This file is part of Win32-Setupsup 1.10 (September 16, 2012)
 
 croak("The Win32::Setupsup module works only on Windows NT")
     unless Win32::IsWinNT();
@@ -361,8 +361,8 @@ Win32::Setupsup - Remote control for Windows applications
 
 =head1 VERSION
 
-This document describes version 1.03 of
-Win32::Setupsup, released November 11, 2011
+This document describes version 1.10 of
+Win32::Setupsup, released September 16, 2012
 
 =head1 SYNOPSIS
 
@@ -745,6 +745,7 @@ Uncaptures a captured mouse pointer.
 
 =back
 
+
 =head1 SEE ALSO
 
 L<Win32::CtrlGUI>, for a more user-friendly wrapper around this
@@ -756,11 +757,7 @@ Win32::Setupsup requires no configuration files or environment variables.
 
 =head1 INCOMPATIBILITIES
 
-The C++ part of Win32::Setupsup uses Microsoft's Structured Exception
-Handling, which is not supported by MinGW's C<gcc>.  Therefore, it does
-not work with Strawberry Perl.  You need to compile Perl (and
-Win32::Setupsup) with Microsoft's Visual C++.  Porting help is
-welcome.
+None reported.
 
 =head1 BUGS AND LIMITATIONS
 
@@ -785,7 +782,7 @@ L<http://github.com/madsen/win32-setupsup>.
 
 Copyright 1999 by Jens Helberg
 
-Copyright 2011 by Christopher J. Madsen
+Copyright 2012 by Christopher J. Madsen
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

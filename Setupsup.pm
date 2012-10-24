@@ -33,14 +33,14 @@ use strict;
 use warnings;
 
 use Carp 'croak';
-use Exporter 'import';
+use Exporter 5.57 'import';     # exported import method
 use Win32API::Registry qw(RegCloseKey RegCreateKeyEx RegOpenKeyEx
                           RegQueryValueEx RegSetValueEx regLastError
                           :KEY_ :HKEY_ :REG_);
 use XSLoader ();
 
-our $VERSION = '1.10';
-# This file is part of Win32-Setupsup 1.10 (September 16, 2012)
+our $VERSION = '1.11';
+# This file is part of Win32-Setupsup 1.11 (October 24, 2012)
 
 croak("The Win32::Setupsup module works only on Windows NT")
     unless Win32::IsWinNT();
@@ -361,8 +361,8 @@ Win32::Setupsup - Remote control for Windows applications
 
 =head1 VERSION
 
-This document describes version 1.10 of
-Win32::Setupsup, released September 16, 2012
+This document describes version 1.11 of
+Win32::Setupsup, released October 24, 2012
 
 =head1 SYNOPSIS
 

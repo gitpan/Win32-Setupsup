@@ -1,4 +1,4 @@
-Win32::Setupsup version 1.10, released September 16, 2012
+Win32::Setupsup version 1.11, released October 24, 2012
 
 
 This module helps you to control other Windows programs.  It's
@@ -35,19 +35,18 @@ Requires Windows NT 4, Windows 2000, or Windows XP
   ------------------- ---------------
   perl                 5.006
   Carp                 
-  Exporter             
+  Exporter             5.57
   Win32API::Registry   
   XSLoader
 
 
 
 CHANGES
-    Here's what's new in version 1.10 of Win32::Setupsup:
+    Here's what's new in version 1.11 of Win32::Setupsup:
     (See the file "Changes" for the full revision history.)
 
-	- port to Strawberry Perl and gcc
-	- fix old C++ syntax to work with Visual C++ 2010
-	- fix refresh parameter in WaitForWindowClose (was ignored)
+	- document that Exporter version 5.57 or later is required
+	  (it has been since Win32::Setupsup 1.03, but wasn't documented)
 
 
 

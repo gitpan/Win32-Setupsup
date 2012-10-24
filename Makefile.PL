@@ -35,7 +35,7 @@ my %args = (
   },
   'PREREQ_PM' => {
     'Carp' => '0',
-    'Exporter' => '0',
+    'Exporter' => '5.57',
     'Win32API::Registry' => '0',
     'XSLoader' => '0'
   },

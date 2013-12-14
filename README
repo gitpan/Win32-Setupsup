@@ -1,4 +1,4 @@
-Win32::Setupsup version 1.11, released October 24, 2012
+Win32::Setupsup version 1.12, released December 14, 2013
 
 
 This module helps you to control other Windows programs.  It's
@@ -33,7 +33,7 @@ Requires Windows NT 4, Windows 2000, or Windows XP
 
   Package             Minimum Version
   ------------------- ---------------
-  perl                 5.006
+  perl                 5.6.0
   Carp                 
   Exporter             5.57
   Win32API::Registry   
@@ -42,18 +42,18 @@ Requires Windows NT 4, Windows 2000, or Windows XP
 
 
 CHANGES
-    Here's what's new in version 1.11 of Win32::Setupsup:
+    Here's what's new in version 1.12 of Win32::Setupsup:
     (See the file "Changes" for the full revision history.)
 
-	- document that Exporter version 5.57 or later is required
-	  (it has been since Win32::Setupsup 1.03, but wasn't documented)
+	- no functional changes
+	- fix build failure with Strawberry Perl 5.10.0.6
 
 
 
 COPYRIGHT AND LICENCE
 
 Copyright 1999 by Jens Helberg
-Copyright 2012 by Christopher J. Madsen
+Copyright 2013 by Christopher J. Madsen
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

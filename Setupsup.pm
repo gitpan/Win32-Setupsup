@@ -39,8 +39,8 @@ use Win32API::Registry qw(RegCloseKey RegCreateKeyEx RegOpenKeyEx
                           :KEY_ :HKEY_ :REG_);
 use XSLoader ();
 
-our $VERSION = '1.11';
-# This file is part of Win32-Setupsup 1.11 (October 24, 2012)
+our $VERSION = '1.12';
+# This file is part of Win32-Setupsup 1.12 (December 14, 2013)
 
 croak("The Win32::Setupsup module works only on Windows NT")
     unless Win32::IsWinNT();
@@ -361,8 +361,8 @@ Win32::Setupsup - Remote control for Windows applications
 
 =head1 VERSION
 
-This document describes version 1.11 of
-Win32::Setupsup, released October 24, 2012
+This document describes version 1.12 of
+Win32::Setupsup, released December 14, 2013
 
 =head1 SYNOPSIS
 
@@ -782,7 +782,7 @@ L<http://github.com/madsen/win32-setupsup>.
 
 Copyright 1999 by Jens Helberg
 
-Copyright 2012 by Christopher J. Madsen
+Copyright 2013 by Christopher J. Madsen
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
